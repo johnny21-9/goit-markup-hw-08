@@ -1,0 +1,29 @@
+.social {
+  display: flex;
+  justify-content: center;
+  &__container {
+    margin-left: 10px;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $text-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms $cubic;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+  }
+
+  &__icon {
+    fill: $icon-grey;
+    transition: fill 250ms $cubic;
+  }
+  &__link:hover &__icon {
+    fill: $text-white;
+  }
+}

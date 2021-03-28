@@ -1,0 +1,102 @@
+.hero {
+  background-color: $hero-bg;
+  background: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  background-position: 50% 50%;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-480@2x.jpg);
+    background-size: cover;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    background: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-768.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-768@2x.jpg);
+      background-size: cover;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    background: linear-gradient(
+        to left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-1200.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: linear-gradient(
+          to left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-1200@2x.jpg);
+      background-size: cover;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.hero__title {
+  font-weight: 900;
+  color: $text-white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  font-size: 26px;
+  line-height: 42px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36em;
+    margin: 0;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.hero__button {
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}

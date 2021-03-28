@@ -1,0 +1,22 @@
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17em;
+  color: black;
+
+  &:link {
+    color: inherit;
+  }
+  &:visited,
+  &:active {
+    color: inherit;
+  }
+}
+.logo__text {
+  margin: 0;
+}
+.logo__text--blue {
+  color: $light-blue;
+}

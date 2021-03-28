@@ -1,0 +1,42 @@
+.directions {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.directions__section-title {
+  margin: 0;
+  margin-bottom: 50px;
+}
+.directions__list {
+  display: flex;
+  margin-left: -30px;
+}
+.directions__image-thumb {
+  height: 294px;
+  position: relative;
+}
+.directions__item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.directions__overlay {
+  width: 370px;
+  height: 70px;
+  background-color: $image-overlay;
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+}
+.directions__text {
+  color: $text-white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0;
+  line-height: 16.41px;
+}
